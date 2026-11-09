@@ -26,7 +26,8 @@ export type Book = { bids: Level[]; asks: Level[] };
 
 export async function getServerTime(): Promise<number> {
   const r = await getJson<{ server_time: number }>("/api/server_time");
-  return Number(r.server_time); // detik (unix); verifikasi lewat /api/health
+     const t = Number(r.server_time);
+   return t > 1e12 ? Math.floor(t / 1000) : t;
 }
 
 export async function getDepth(pair: string): Promise<Book> {
