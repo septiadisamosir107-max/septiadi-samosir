@@ -1,0 +1,9 @@
+{
+  "name": "uas-algotrading-bot",
+  "private": true,
+  "scripts": { "typecheck": "tsc --noEmit" },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
