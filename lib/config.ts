@@ -12,7 +12,7 @@ export const CFG = {
   minOrderIDR: 25_000,
   // ISI sebelum freeze: tarif taker all-in dalam persen (yang lebih mahal antara /api/pairs dan halaman biaya resmi).
   // Selama null, bot tidak membuka posisi baru.
-  takerFeePct: null as number | null,
+     takerFeePct: 0.45 as number | null,
   historyBars: 600,
   maxCatchUp: 6, // candle tertinggal yang diproses sekaligus bila penjadwal terlambat
 };
