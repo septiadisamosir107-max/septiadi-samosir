@@ -24,9 +24,7 @@
 - Idempotency per candle, kill switch (/api/kill), retry terbatas, endpoint dilindungi CRON_SECRET.
 
 ## Jadwal
-- Waktu freeze: waktu commit ini. Forward test berjalan 10 hari penuh sejak tick pertama.
-- Catatan: freeze dilakukan setelah tanggal yang ditetapkan soal (4 November 2026) karena persiapan terlambat. Sudah dilaporkan ke dosen.
-
+- Catatan: freeze dilakukan pada 12 November 2026 (commit 2170950), setelah tanggal yang ditetapkan soal (4 November 2026) karena persiapan terlambat. Tick pertama berjalan 12 November 2026 sekitar 11.42 WIB, jadi forward test 10 hari selesai sekitar 22 November 2026, setelah tenggat pengumpulan.
 ## Setup
 1. Isi environment variable di Vercel: CRON_SECRET, KV_REST_API_URL, KV_REST_API_TOKEN, PAIRS.
 2. Isi GitHub Secrets: CRON_SECRET dan BOT_BASE_URL.
